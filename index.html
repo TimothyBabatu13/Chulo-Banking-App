@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <select name="" id="select">
+            <option value="$50000">$50000</option>
+            <option value="$100000">$100000</option>
+        </select>
+        <input type="text"  required name="" placeholder="Input account name" id="account-name">
+        <input type="number"  required name="" placeholder="Input account number" id="account-number">
+        <input type="text"  required name="" placeholder="Input bank name" id="bank-name">
+        <input type="number"  required name="" placeholder="Enter routing number for local transfer" id="routing-number">
+        <input type="text"  required name="" placeholder="Only enter swift for international transfer" id="swift">
+        <input type="number"  required name="" placeholder="Enter amount" id="amount">
+        
+        <div style="display: flex; align-items: center;">
+            <input style="width: 20px !important;" type="checkbox" name="" id=""> <p>Save Beneficiary</p>
+        </div>
+        <div>
+            <button id="cancel">Cancel</button>
+            <button id="only" type="submit">Send</button>
+        </div>
+
+
+    </form>
+
+    <div id="loader-container" style="position: relative;" class="hide">
+        <div id="loader" ></div>
+        <span id="loader-number"></span>
+    </div>
+    <div id="insert--here">
+
+    </div>
+
+    <div id="tenth-step" class="hide">
+        <p>Transfer successful. You have succesfully transferred <span class="insert-amount"></span> from your 
+            <span class="insert-account"></span> to <span class="insert-name"></span>
+        </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
